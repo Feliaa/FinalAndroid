@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="login">Log In</string>
+    <string name="forgotpw">Forgot Password</string>
+    <string name="createAccount">CREATE NEW ACCOUNT</string>
+    <string name="loginguest">Log in as Guest</string>
+</resources>

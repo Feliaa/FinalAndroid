@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration">
+
+    <TextView
+        android:id="@+id/tvRegistraion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="Registration:"
+        android:textAlignment="center"
+        android:textSize="57dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/tvDirections"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="126dp"
+        android:text="(please fill out all fields)"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="105dp" />
+
+    <EditText
+        android:id="@+id/edfirst_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="163dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="(first name)"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="166dp" />
+
+    <EditText
+        android:id="@+id/edlast_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="219dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="(last name)"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="237dp" />
+
+    <EditText
+        android:id="@+id/edEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="243dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="(email)"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="311dp" />
+
+    <EditText
+        android:id="@+id/edPW1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="188dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="(password)"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="386dp" />
+
+    <EditText
+        android:id="@+id/edPW2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edPW1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-188dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="(retype password)"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="458dp" />
+
+    <Button
+        android:id="@+id/btn_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:text="Create Account" />
+</RelativeLayout>
