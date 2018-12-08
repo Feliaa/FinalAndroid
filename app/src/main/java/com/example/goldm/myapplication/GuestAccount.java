@@ -1,6 +1,7 @@
 package com.example.goldm.myapplication;
 
 import android.content.Intent;
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -17,10 +18,10 @@ public class GuestAccount extends AppCompatActivity {
 
         open_guest_camera = (Button)findViewById(R.id.btn_guestcamera);
 
-        open_guest_camera.setOnClickListener(new View.OnClickListener() {
+      open_guest_camera.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                opencamera();
+                takePictureFromCamera();
             }
         });
 
@@ -30,5 +31,11 @@ public void opencamera()
     {
         Intent intent = new Intent("android.media.action.IMAGE_CAPTURE");
         startActivity(intent);
+    }
+
+
+    public void takePictureFromCamera() {
+        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        startActivityForResult(intent, CAMERA_REQUEST_CODE);
     }
 }
